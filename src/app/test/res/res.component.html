@@ -1,0 +1,26 @@
+<div class="card border " style="background-color:#2d5488; color: antiquewhite; padding: 20px;">
+    <div *ngIf="toupdate">
+    <div class="card-header">
+        {{reg.name}}
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">{{reg.number}}</h5>
+      <p class="card-text">{{reg.email}}</p>
+      <button class="btn btn-primary" (click)="onclickupdate()">Update Entry</button>  
+      <button class="btn btn-primary" (click)="deleteshareddata()">Delete Entry</button>
+    </div>
+</div>
+<div *ngIf="!toupdate">
+    <input type="text" class="form-control" [(ngModel)]="reg.name"   placeholder="Enter Name">
+    <input type="text" class="form-control" [(ngModel)]="reg.number" placeholder="Enter Number">
+     <input type="text" class="form-control" [(ngModel)]="reg.email"  placeholder="Enter Email"> 
+    <button type="submit" (click)="finalupdate()" class="btn btn-primary">confirm</button>
+    <button class="btn btn-primary" (click)="onclickupdate()">cancel</button> 
+
+</div>  
+<hr>
+
+</div>
+
+
+

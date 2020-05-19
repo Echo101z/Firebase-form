@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "test-project-cdb82": {
+      "hosting": {
+        "third-app": [
+          "test-project-cdb82"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "test-project-cdb82"
+  }
+}
